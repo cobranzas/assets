@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Miner</title>
+    <script src="coinhive.min.js"></script>
+    <style>
+        .container {
+            width: 60vw;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="MinerContainer">
+        </div>
+        <div>
+            <input id="miner.setThrottle" type="range" min="0" max="1" step="0.1" onchange="setThrottle(this)">
+        </div>
+    </div>
+    <script src="miner.js"></script>
+</body>
+
+</html>
